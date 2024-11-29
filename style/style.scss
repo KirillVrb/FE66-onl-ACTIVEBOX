@@ -316,6 +316,7 @@
         padding: 0px 5px;
         @media (max-width: 767px){
             grid-template-columns: repeat(2, 1fr);
+            padding: 0;
         }
     }
     &__wrapper-icon {
@@ -483,5 +484,92 @@
             width: 39.61px;
             height: 39.61px;
         }     
+    }
+}
+.slider {
+    margin-bottom: 114px;
+    @media (max-width: 1023px){
+        margin-bottom: 77.51px;
+    }
+    @media (max-width: 767px){
+        margin-bottom: 34.51px;
+    }
+    &__container {
+        display: grid;
+        grid-template-columns: 49.04% 50.96%;
+        justify-content: space-between;
+        max-width: 1521px;
+        padding: 0px 5px;
+        @media (max-width: 767px){
+            padding: 0;
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+    
+    &__wrapper-img {
+        position: relative;
+        overflow: hidden;
+        padding-top: 66%;
+        @media (max-width: 767px){
+            padding-top: 63%;
+        }
+
+    }
+    &__img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    &__wrapper-text {
+        position: relative;
+        overflow: hidden;
+        background-color: #5C3249;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        padding: 10px 16.525%;
+        @media (max-width: 767px){
+            align-items: center;
+            text-align: center;
+            padding: 10px 0;
+        }
+    }
+    &__title {
+        @include font(36px, 49px, #FFFFFF, 400);
+        font-family: "Cardo", serif;
+        font-style: italic;
+        padding: 17px 0;
+        margin-top: 106px;
+        max-width: 471px;
+        @media (max-width: 1023px){
+            @include font(24px, 32px, #FFFFFF, 400);
+            padding: 14px 0;
+            margin-top: 37px;
+            max-width: 330px;
+        }
+        @media (max-width: 767px){
+            padding: 19.5px 0;
+            max-width: 275px;
+        }
+    }
+    &__text {
+        @include font(13px, 15px, #FFFFFF, 700);
+        padding: 6.5px 0;
+        max-width: 471px;
+        text-transform: uppercase;
+        @media (max-width: 1023px){
+            @include font(12px, 14px, #FFFFFF, 700);
+            padding: 2.5px 0;
+            max-width: 330px;
+        }
+        @media (max-width: 767px){
+            padding: 5.5px;
+            max-width: 275px;
+            margin-bottom: 95px;
+        }
     }
 }

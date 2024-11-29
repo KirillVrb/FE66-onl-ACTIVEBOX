@@ -401,6 +401,7 @@
 @media (max-width: 767px) {
   .work__container {
     grid-template-columns: repeat(2, 1fr);
+    padding: 0;
   }
 }
 .work__wrapper-icon {
@@ -640,5 +641,122 @@
   .team__link {
     width: 39.61px;
     height: 39.61px;
+  }
+}
+
+.slider {
+  margin-bottom: 114px;
+}
+@media (max-width: 1023px) {
+  .slider {
+    margin-bottom: 77.51px;
+  }
+}
+@media (max-width: 767px) {
+  .slider {
+    margin-bottom: 34.51px;
+  }
+}
+.slider__container {
+  display: grid;
+  grid-template-columns: 49.04% 50.96%;
+  justify-content: space-between;
+  max-width: 1521px;
+  padding: 0px 5px;
+}
+@media (max-width: 767px) {
+  .slider__container {
+    padding: 0;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.slider__wrapper-img {
+  position: relative;
+  overflow: hidden;
+  padding-top: 66%;
+}
+@media (max-width: 767px) {
+  .slider__wrapper-img {
+    padding-top: 63%;
+  }
+}
+.slider__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.slider__wrapper-text {
+  position: relative;
+  overflow: hidden;
+  background-color: #5C3249;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 10px 16.525%;
+}
+@media (max-width: 767px) {
+  .slider__wrapper-text {
+    align-items: center;
+    text-align: center;
+    padding: 10px 0;
+  }
+}
+.slider__title {
+  font-size: 36px;
+  line-height: 49px;
+  color: #FFFFFF;
+  font-weight: 400;
+  font-family: "Cardo", serif;
+  font-style: italic;
+  padding: 17px 0;
+  margin-top: 106px;
+  max-width: 471px;
+}
+@media (max-width: 1023px) {
+  .slider__title {
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+    font-weight: 400;
+    padding: 14px 0;
+    margin-top: 37px;
+    max-width: 330px;
+  }
+}
+@media (max-width: 767px) {
+  .slider__title {
+    padding: 19.5px 0;
+    max-width: 275px;
+  }
+}
+.slider__text {
+  font-size: 13px;
+  line-height: 15px;
+  color: #FFFFFF;
+  font-weight: 700;
+  padding: 6.5px 0;
+  max-width: 471px;
+  text-transform: uppercase;
+}
+@media (max-width: 1023px) {
+  .slider__text {
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+    font-weight: 700;
+    padding: 2.5px 0;
+    max-width: 330px;
+  }
+}
+@media (max-width: 767px) {
+  .slider__text {
+    padding: 5.5px;
+    max-width: 275px;
+    margin-bottom: 95px;
   }
 }/*# sourceMappingURL=style.css.map */
