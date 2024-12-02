@@ -41,6 +41,7 @@
         justify-content: space-between;
         position: relative;
         border-bottom: 1px solid #BABBC5;
+        padding: 0;
         @media (max-width: 767px){
             border-bottom: none;
         }
@@ -97,11 +98,24 @@
     &__item {
     text-align: center;
     min-width: 134px;
+    @media (max-width: 1023px){
+        min-width: 112px;
+        }
+    }
+    
+    &__link {
+    @include font(13px, 15px, #fff, 700);
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
     padding-top: 36px;
     padding-bottom: 32px;
     border-bottom: 3px solid transparent;
+    cursor: pointer;
+    
     @media (max-width: 1023px){
-        min-width: 112px;
+        font-size: 12px;
+        line-height: 14px;
         padding-top: 38px;
         padding-bottom: 40px;
         }
@@ -111,20 +125,6 @@
         &:active {
             color: #E71414;
             border-bottom: 3px solid#E71414;
-            }
-    }
-    
-    &__link {
-    @include font(13px, 15px, #fff, 700);
-    text-decoration: none;
-    text-transform: uppercase;
-    cursor: pointer;
-    @media (max-width: 1023px){
-        font-size: 12px;
-        line-height: 14px;
-        }
-        &:active {
-            color: #E71414;
             }
     }
 }
@@ -159,9 +159,6 @@
     &__container {
         position: relative;
         text-align: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
     }
     &__title {
         @include font(64px, 75px, #fff, 900);
@@ -178,7 +175,7 @@
     }
     &__text {
         @include font(24px, 28px, #fff, 400);
-        margin-bottom: 79.57px;
+        margin: 0 auto 79.57px;
         max-width: 1030px;
         @media (max-width: 1023px){
             max-width: 770px;
@@ -631,7 +628,7 @@
     }
     &__container {
         display: grid;
-        grid-template-columns: repeat(3, 25.838%);
+        grid-template-columns: repeat(3, 1fr);
         justify-content: center;
         column-gap: 30px;
         margin-bottom: 71px;
@@ -715,25 +712,17 @@
     }
     &__wrapper-text{
         background-color: #2C3154;
-        padding-top: 23.86px;
-        padding-bottom: 24.14px;
-        @media (max-width: 1023px){
-            padding-top: 14.28px;
-            padding-bottom: 14.43px;
-        }
-        @media (max-width: 767px){
-            padding-top: 29.86px;
-            padding-bottom: 28.14px;
-        }
     }
     &__wrapper-container {
         max-width: 370px;
-        padding: 0;
+        padding: 23.86px 0 24.14px;
         @media (max-width: 1023px){
             max-width: 314px;
+            padding: 14.28x 0 14.43px;
         }
         @media (max-width: 767px){
             max-width: 280px;
+            padding: 29.86x 0 28.14px;
         } 
     }
     &__text-gray {
