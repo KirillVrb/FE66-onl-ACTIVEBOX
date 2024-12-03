@@ -373,7 +373,7 @@
   display: grid;
   margin: 0 auto 114px;
   grid-template-columns: repeat(4, 1fr);
-  max-width: 1542px;
+  max-width: 100%;
   gap: 2px;
 }
 @media (max-width: 1023px) {
