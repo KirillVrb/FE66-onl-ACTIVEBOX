@@ -15,13 +15,7 @@
 .container {
     max-width: 1202px;
     margin: 0 auto;
-    padding: 0px 16px;
-    @media (max-width: 1023px){
-        max-width: 1016px;
-    }
-    @media (max-width: 767px){
-        max-width: 312px;
-    }
+    padding: 0px 20px;
 }
 .header {
     position: absolute;
@@ -48,9 +42,6 @@
     &__mobile-menu {
         display: none;
         @media (max-width: 767px){
-            position: absolute;
-            top: -2.39px;
-            left: 261px;
             max-height: 18px;
             max-width: 24px;
             display: block;
@@ -183,7 +174,6 @@
             margin-bottom: 89.14px;
         }
         @media (max-width: 767px){
-            max-width: 260px;
             line-height: 16px;
             font-size: 14px;
             margin-bottom: 49.29px;
@@ -203,7 +193,7 @@
         }
         @media (max-width: 767px){
             padding: 16px 10px;
-            max-width: 314px;
+            max-width: 100%;
         }
 
         &:hover {
@@ -402,11 +392,9 @@
         padding: 1px 0;
         @media (max-width: 1023px){
             @include font(18px, 21px, #2D3033, 700);
-            padding: 2.115px 0;
             margin-bottom: 4.6px;
         }
         @media (max-width: 767px){
-            padding: 2.125px 0;
             margin-bottom: 4.61px;
         }
     }
@@ -461,15 +449,17 @@
         }
         &:hover {
             border: 1px solid #E71414;
+
+            path{
+                fill: #E71414;
+            }
         }
         &:active {
             border: 1px solid #FF4343;
-        }
-        &:hover path{
-            fill: #E71414;
-        }
-        &:active path{
-            fill: #FF4343;
+
+            path{
+                fill: #FF4343;
+            }
         }
     }
 }
@@ -495,11 +485,7 @@
     &__wrapper-img {
         position: relative;
         overflow: hidden;
-        padding-top: 66%;
-        @media (max-width: 767px){
-            padding-top: 63%;
-        }
-
+        padding-top: 66.25%;
     }
     &__img {
         position: absolute;
@@ -510,8 +496,6 @@
         object-fit: cover;
     }
     &__wrapper-text {
-        position: relative;
-        overflow: hidden;
         background-color: #5C3249;
         display: flex;
         justify-content: center;
@@ -522,7 +506,8 @@
         @media (max-width: 767px){
             align-items: center;
             text-align: center;
-            padding: 23px 0;
+            padding: 23px 20px 100.5px 20px;
+            row-gap: 28.5px;
         }
     }
     &__title {
@@ -536,7 +521,8 @@
             max-width: 330px;
         }
         @media (max-width: 767px){
-            max-width: 275px;
+            max-width: 100%;
+            margin: 0;
         }
     }
     &__text {
@@ -545,13 +531,10 @@
         text-transform: uppercase;
         @media (max-width: 1023px){
             @include font(12px, 14px, #FFFFFF, 700);
-            padding: 2.5px 0;
             max-width: 330px;
         }
         @media (max-width: 767px){
-            padding: 5.5px;
-            max-width: 275px;
-            margin-bottom: 95px;
+            max-width: 100%;
         }
     }
 }
@@ -605,7 +588,7 @@
             max-width: 314px;
         }
         @media (max-width: 767px){
-            max-width: 280px;
+            max-width: 100%;
         }
         &:hover {
             background-color: #E71414;  
@@ -638,20 +621,11 @@
         @media (max-width: 767px){
             grid-template-columns: repeat(1, 1fr);
             margin-bottom: 33.14px;
+            row-gap: 50px;
         }
     }
     &__item {
         text-align: center;
-        &-one {
-            @media (max-width: 767px){
-                margin-bottom: 69.34px;
-            } 
-        }
-        &-two {
-            @media (max-width: 767px){
-                margin-bottom: 58.91px;
-            } 
-        }
     }
     &__title {
         @include font(18px, 21px, #fff, 700);
@@ -698,16 +672,18 @@
         }
         &:hover {
             border: 1px solid #E71414;
+
+            path{
+                fill: #E71414;
+            }
         }
         &:active {
             border: 1px solid #FF4343;
-        }
-        &:hover path{
-            fill: #E71414;
-        }
-        &:active path{
-            fill: #FF4343;
-        }    
+
+            path{
+                fill: #FF4343;
+            }
+        }   
     }
     &__wrapper-text{
         background-color: #2C3154;
@@ -724,12 +700,6 @@
     }
     &__wrapper-container {
         max-width: 390px;
-        @media (max-width: 1023px){
-            max-width: 346px;
-        }
-        @media (max-width: 767px){
-            max-width: 312px;
-        } 
     }
     &__text-gray {
         text-align: center;
