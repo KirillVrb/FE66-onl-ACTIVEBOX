@@ -41,7 +41,6 @@
         justify-content: space-between;
         position: relative;
         border-bottom: 1px solid #BABBC5;
-        padding: 0;
         @media (max-width: 767px){
             border-bottom: none;
         }
@@ -203,8 +202,8 @@
             max-width: 314px;
         }
         @media (max-width: 767px){
-            max-width: 280px;
             padding: 16px 10px;
+            max-width: 314px;
         }
 
         &:hover {
@@ -712,17 +711,24 @@
     }
     &__wrapper-text{
         background-color: #2C3154;
-    }
-    &__wrapper-container {
-        max-width: 370px;
-        padding: 23.86px 0 24.14px;
+        padding-top: 23.86px;
+        padding-bottom: 24.14px;
         @media (max-width: 1023px){
-            max-width: 314px;
-            padding: 14.28x 0 14.43px;
+            padding-top: 14.28px;
+            padding-bottom: 14.43px;
         }
         @media (max-width: 767px){
-            max-width: 280px;
-            padding: 29.86x 0 28.14px;
+            padding-top: 29.86px;
+            padding-bottom: 28.14px;
+        } 
+    }
+    &__wrapper-container {
+        max-width: 390px;
+        @media (max-width: 1023px){
+            max-width: 346px;
+        }
+        @media (max-width: 767px){
+            max-width: 312px;
         } 
     }
     &__text-gray {
