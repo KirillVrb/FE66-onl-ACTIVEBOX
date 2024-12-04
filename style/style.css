@@ -4,7 +4,27 @@
   box-sizing: border-box;
   font-family: "Raleway", sans-serif;
 }
-
+@keyframes wobble-hor-bottom {
+  0%, 100% {
+    transform: translateX(0%);
+    transform-origin: 50% 50%;
+  }
+  15% {
+    transform: translateX(-30px) rotate(-6deg);
+  }
+  30% {
+    transform: translateX(15px) rotate(6deg);
+  }
+  45% {
+    transform: translateX(-15px) rotate(-3.6deg);
+  }
+  60% {
+    transform: translateX(9px) rotate(2.4deg);
+  }
+  75% {
+    transform: translateX(-6px) rotate(-1.2deg);
+  }
+}
 .container {
   max-width: 1210px;
   margin: 0 auto;
@@ -58,6 +78,7 @@
   width: 100%;
   max-height: 25.75px;
   height: 100%;
+  animation: wobble-hor-bottom 3s infinite both;
 }
 @media (max-width: 1023px) {
   .logo {
@@ -112,6 +133,7 @@
   padding-top: 44px;
   padding-bottom: 37px;
   border-bottom: 3px solid transparent;
+  transition: all 0.3s ease 0s;
   cursor: pointer;
 }
 @media (max-width: 1023px) {
@@ -229,6 +251,7 @@
   border: none;
   text-transform: uppercase;
   cursor: pointer;
+  transition: all 0.3s ease 0s;
 }
 @media (max-width: 1023px) {
   .banner__button {
@@ -406,6 +429,7 @@
   top: 0;
   width: 100%;
   height: 100%;
+  transition: all 0.5s ease 0s;
 }
 .work__img-content:hover {
   opacity: 1;
@@ -604,6 +628,7 @@
   width: 39px;
   height: 39px;
   border: 1px solid #C6CBCD;
+  transition: all 0.5s ease 0s;
 }
 @media (max-width: 1023px) {
   .team__link {
@@ -616,6 +641,9 @@
     width: 39.61px;
     height: 39.61px;
   }
+}
+.team__link path {
+  transition: all 0.5s ease 0s;
 }
 .team__link:hover {
   border: 1px solid #E71414;
@@ -821,6 +849,7 @@
   border: none;
   text-transform: uppercase;
   cursor: pointer;
+  transition: all 0.3s ease 0s;
 }
 @media (max-width: 1023px) {
   .download__button {
@@ -950,12 +979,16 @@
   width: 39px;
   height: 39px;
   border: 1px solid #C6CBCD;
+  transition: all 0.5s ease 0s;
 }
 @media (max-width: 1023px) {
   .footer__link {
     width: 33px;
     height: 33px;
   }
+}
+.footer__link path {
+  transition: all 0.5s ease 0s;
 }
 .footer__link:hover {
   border: 1px solid #E71414;
