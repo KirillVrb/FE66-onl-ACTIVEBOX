@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="style/style.css">
     <title>ActiveBox</title>
 </head>
@@ -269,14 +270,55 @@
         </div>
     </div>
     <div class="slider">
-        <div class="container slider__container">
-            <div class="slider__wrapper-img">
-                <img class="slider__img" src="images/sliderimg.jpg">
+        <div class="swiper swiper-review">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slider__container">
+                    <div class="slider__wrapper-img">
+                        <img class="slider__img" src="images/sliderimg.jpg">
+                    </div>
+                    <div class="slider__wrapper-text">
+                        <h3 class="slider__title">“Integer Posuere Erat A Ante Venenatis Dapibus Posuere Velit Aliquet. Donec Sed Odio Dui. Aenean Eu Leo Quam...”</h3>
+                        <p class="slider__text">Susan Sims, Interaction Designer at XYZ</p>
+                    </div>
+                </div>
+                <div class="swiper-slide slider__container">
+                    <div class="slider__wrapper-img">
+                        <img class="slider__img" src="images/sliderimg.jpg">
+                    </div>
+                    <div class="slider__wrapper-text">
+                        <h3 class="slider__title">“Integer Posuere Erat A Ante Venenatis Dapibus Posuere Velit Aliquet. Donec Sed Odio Dui. Aenean Eu Leo Quam...”</h3>
+                        <p class="slider__text">Susan Sims, Interaction Designer at XYZ</p>
+                    </div>
+                </div>
+                <div class="swiper-slide slider__container">
+                    <div class="slider__wrapper-img">
+                        <img class="slider__img" src="images/sliderimg.jpg">
+                    </div>
+                    <div class="slider__wrapper-text">
+                        <h3 class="slider__title">“Integer Posuere Erat A Ante Venenatis Dapibus Posuere Velit Aliquet. Donec Sed Odio Dui. Aenean Eu Leo Quam...”</h3>
+                        <p class="slider__text">Susan Sims, Interaction Designer at XYZ</p>
+                    </div>
+                </div>
+                <div class="swiper-slide slider__container">
+                    <div class="slider__wrapper-img">
+                        <img class="slider__img" src="images/sliderimg.jpg">
+                    </div>
+                    <div class="slider__wrapper-text">
+                        <h3 class="slider__title">“Integer Posuere Erat A Ante Venenatis Dapibus Posuere Velit Aliquet. Donec Sed Odio Dui. Aenean Eu Leo Quam...”</h3>
+                        <p class="slider__text">Susan Sims, Interaction Designer at XYZ</p>
+                    </div>
+                </div>
+                <div class="swiper-slide slider__container">
+                    <div class="slider__wrapper-img">
+                        <img class="slider__img" src="images/sliderimg.jpg">
+                    </div>
+                    <div class="slider__wrapper-text">
+                        <h3 class="slider__title">“Integer Posuere Erat A Ante Venenatis Dapibus Posuere Velit Aliquet. Donec Sed Odio Dui. Aenean Eu Leo Quam...”</h3>
+                        <p class="slider__text">Susan Sims, Interaction Designer at XYZ</p>
+                    </div>
+                </div>
             </div>
-            <div class="slider__wrapper-text">
-                <h3 class="slider__title">“Integer Posuere Erat A Ante Venenatis Dapibus Posuere Velit Aliquet. Donec Sed Odio Dui. Aenean Eu Leo Quam...”</h3>
-                <p class="slider__text">Susan Sims, Interaction Designer at XYZ</p>
-            </div>
+            <div class="swiper-pagination"></div>
         </div>
     </div>
     <section class="download">
@@ -320,5 +362,19 @@
             </div>
         </div>   
     </footer> 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+                const swiper = new Swiper('.swiper-review', {
+        // Optional parameters
+        loop: true,
+        autoHeight: true,
+
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true
+        },
+        });
+    </script>
 </body>
 </html>
